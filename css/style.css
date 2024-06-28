@@ -1,0 +1,143 @@
+:root {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: small;
+
+}
+
+body {
+    font-weight: 500;
+    padding: 1rem;
+}
+
+/* --- header --- */
+.top {
+    width: 170px;
+    margin-top: 3rem;
+}
+
+.top a {
+    font-weight: 550;
+    color: #000000;
+    text-decoration: none;
+}
+.nav {
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.item {
+    margin-right: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* --- main (index.html) --- */
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+} 
+
+/* --- main (portfolio)--- */
+.overview .title {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.repositories {
+    margin-bottom: 3rem;
+}
+
+.repositories a{ 
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+/* --- footer --- */
+.footer {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    bottom: 0;
+}
+
+.c-mark {  
+    font-size: 1.5rem;
+}
+
+.c-name {
+    font-size: 0.9rem;
+    
+    padding-left: 0.5rem; 
+}
+
+.modified-data {
+    font-size: 0.7rem;
+}
+
+
+/* ------------- */
+@media (min-width: 1024px){
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    a.item {
+        margin-bottom: 1rem;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: auto;
+        margin: 7rem;
+    }
+
+    .overview{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: 9rem;
+    }
+
+    .overview .title {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .repositories {
+        width: 40%;
+        height: 40%;
+        padding-right: 3rem;
+
+    }
+
+    .footer {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0;
+    }
+
+
+}
