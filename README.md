@@ -1,5 +1,5 @@
 # Portfolio Site
-[ポートフォリオサイト](https://portfolio.ryosuke-tech.com/)
+[ポートフォリオサイト](https://portfolio.ryosuke-tech.com/){:target="_blank"}
 #### 使用技術
 <p style="display: inline">
 <img src="https://img.shields.io/badge/-Linux-212121.svg?logo=linux&style=popout">
