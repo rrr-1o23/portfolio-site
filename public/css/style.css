@@ -1,0 +1,206 @@
+:root {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+body {
+    padding: 1rem;
+}
+
+/* --- header name --- */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 140px;
+    margin-top: 2rem;
+}
+
+.top a {
+    font-weight: 550;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.nav {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.item {
+    margin-right: 2rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* --- main (index.html) --- */
+.photo {
+    display: flex;
+    margin-top: 2rem;
+    
+} 
+
+/* --- main (portfolio.html)--- */
+.overview .title {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.repositories {
+    margin-bottom: 3rem;
+}
+
+.repositories a{ 
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* --- main (resume.html)--- */
+.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+}
+.icon a {
+    
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+/* --- footer --- */
+.footer {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+}
+
+.c-mark { 
+    font-size: 1.3rem;
+}
+
+.c-name {
+    font-size: 0.9rem;
+    
+    padding-left: 0.5rem; 
+}
+
+.modified-data {
+    font-size: 0.7rem;
+}
+
+
+
+@media (min-width: 1024px){
+    body {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 5rem 0 2rem;
+
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    a.item {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        margin-top: 3.5rem;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        margin-left: 5rem;
+        width: 60%;
+    }
+
+    .overview{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .overview .title {
+        margin-bottom: 1rem;
+    }
+
+    .repositories {
+        width: 40%;
+        height: 40%;
+        padding-right: 3rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .footer {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0;
+    }
+
+}
+
+
+
+
+/* カーソルを重ねる要素 */
+.tooltip {
+    position: relative; /* ツールチップの位置の基準に */
+    cursor: pointer; /* カーソルを当てたときにポインターに */
+  }
+  
+  /* ツールチップのテキスト */
+.tooltip-text {
+    opacity: 0; /* はじめは隠しておく */
+    visibility: hidden; /* はじめは隠しておく */
+    position: absolute; /* 絶対配置 */
+    left: 200%; /* 親に対して中央配置 */
+    transform: translateX(-50%); /* 親に対して中央配置 */
+    bottom: -30%; /* 親要素下からの位置 */
+    display: inline-block;
+    padding: 5px; /* 余白 */
+    white-space: nowrap; /* テキストを折り返さない */
+    font-size: 0.8rem; /* フォントサイズ */
+    line-height: 1.3; /* 行間 */
+    background: #333; /* 背景色 */
+    color: #fff; /* 文字色 */
+    border-radius: 3px; /* 角丸 */
+    transition: 0.3s ease-in; /* アニメーション */
+}
+  
+  /* ホバー時にツールチップの非表示を解除 */
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
