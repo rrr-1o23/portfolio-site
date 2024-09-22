@@ -45,7 +45,7 @@ header {
 /* --- main (index.html) --- */
 .photo {
     display: flex;
-    margin-top: 2rem;
+    margin: 2rem 0;
     
 } 
 
@@ -68,21 +68,31 @@ header {
 /* --- main (resume.html)--- */
 .skill {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.index {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-line {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .icon {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 1rem;
 }
+
 .icon a {
-    
     color: #000000;
     text-decoration: none;
 }
-
 
 
 
@@ -185,7 +195,7 @@ header {
     opacity: 0; /* はじめは隠しておく */
     visibility: hidden; /* はじめは隠しておく */
     position: absolute; /* 絶対配置 */
-    left: 200%; /* 親に対して中央配置 */
+    left: 135%; /* 親に対して中央配置 */
     transform: translateX(-50%); /* 親に対して中央配置 */
     bottom: -30%; /* 親要素下からの位置 */
     display: inline-block;
