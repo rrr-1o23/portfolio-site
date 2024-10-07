@@ -1,6 +1,8 @@
 # Portfolio Site
-[ポートフォリオサイト](https://portfolio.ryosuke-tech.com/)
-#### 使用技術
+
+### [ポートフォリオサイト](https://portfolio.ryosuke-tech.com/)
+
+## 使用技術
 <p style="display: inline">
 <img src="https://img.shields.io/badge/-Linux-212121.svg?logo=linux&style=popout">
 <img src="https://img.shields.io/badge/-AWS-252F3E.svg?logo=amazon&style=popout">
@@ -27,7 +29,8 @@ AWSのEC2でUbuntuを利用し，NGINXを用いてサーバーを構成，UFWを
 | AWS EC2 | Ubuntu |
 | NGINX | 1.24.0 |
 
-------
+&nbsp;
+
 | OS・言語・ライブラリ | バージョン |
 | :------- | :------ |
 | Ubuntu | 22.04.4 LTS |
